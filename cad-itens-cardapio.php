@@ -33,7 +33,11 @@ if(isset($_POST['id_cardapio'])){
     <script src="./js/mask.js"></script>
     <script src="./js/app.js"></script>
     <link rel="stylesheet" href="./css/cardapio.css">
-    <title>Cadastrar Itens Cardápio</title>
+    
+    <link rel="stylesheet" href="./css/paginas.css">
+
+    <title>Cadastrar Produtos NF</title>
+    
 </head>
 <body>
     <div class="menu">  
@@ -150,5 +154,5 @@ if(isset($_POST['id_cardapio'])){
     </div>
     </div>
 
-    
+    <footer class="menurp"><a href="" class="paragrafo">-->Desenvolvido pela Segunda Turma do Curso Técnico de Informática<--</a></footer>
 </body>

@@ -25,9 +25,10 @@ $notas = $nota->listando_nota();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/paginas.css">
     <link rel="stylesheet" href="./css/estiloproduto.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/datatables.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/datatables.js"></script>
+    <script src="./js/mask.js"></script>
+    <script src="./js/app.js"></script>
     <link rel="stylesheet" href="./css/datatable.css">
 
     <title>LISTA DE NOTAS</title>
@@ -44,8 +45,8 @@ $notas = $nota->listando_nota();
             <table id="myTable" class="table" >
                 <thead>
                     <tr>
-                        <th> Produtos</th>
-                        <th> Fornecedor</th>
+                        <th> #</th>
+                        <th> Nome Fornecedor</th>
                         <th> Numero Nota</th>
                         <th> Data Entrada</th>
                         <th> valor</th>
@@ -55,11 +56,11 @@ $notas = $nota->listando_nota();
                 <tbody>
                     <?php foreach($notas as $nota): ?>
                         <tr>
-                            <td><?php echo $nota['id_produto']?></td>
-                            <td><?php echo $nota['id_fornecedor']?></td>
-                            <td><?php echo $nota['numero_nota']?></td>
+                            <td><?php echo $nota['id_nota']?></td>
+                            <td><?php echo $nota['nome_fornecedor']?></td>
+                            <td><?php echo str_pad($nota['numero_nota'], 10, "0", STR_PAD_LEFT)?></td>
                             <td><?php echo date('d/m/Y',strtotime($nota['data_entrada']))?></td>                                        
-                            <td><?php echo $nota['valor_produto']?></td>
+                            <td><span>R$ <span class="dinheiro"><?php echo $nota['total_nota']?></span></span></td>
 
                             <td>
                                 <a href="excluir-.php?id=<?php echo $nota[''] ?>" class="btn btn-danger"> Excluir </a>

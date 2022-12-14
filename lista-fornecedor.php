@@ -43,7 +43,7 @@ $fornecedores = $fornecedor->listarFornecedores();
     <div class="fundo-lista-forn">
     
         <h1>Lista de Fornecedores</h1>
-        <table class="table" id="myTable">
+        <table class="table fundo" id="myTable">
             <thead>
                 <th>Fornecedor</th>
                 <th>CNPJ</th>

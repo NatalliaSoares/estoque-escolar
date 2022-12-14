@@ -39,7 +39,7 @@ if(isset($_POST['fornecedor']) && ($_POST['fornecedor']) != "" && ($_POST['ender
     </div>
     <div class="fundo-cad">
         <h1>Cadastrar Fornecedor</h1>
-        <form class="container" method="POST">
+        <form class="fundo" method="POST">
             <label>Fornecedor:</label>
             <input class="form-control" placeholder="Informe o fornecedor" type="text" name="fornecedor" required>
             <label>CNPJ:</label>
@@ -69,5 +69,8 @@ if(isset($_POST['fornecedor']) && ($_POST['fornecedor']) != "" && ($_POST['ender
             </div>    
         </form>
     </div>
+
+    <footer class="menurp"><a href="" class="paragrafo">-->Desenvolvido pela Segunda Turma do Curso Técnico de Informática<--</a></footer>
+
 </body>
 </html>

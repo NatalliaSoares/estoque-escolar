@@ -1,5 +1,4 @@
 body{
-    background-color: #CFDCC0;
     color: #115B31;
 }
 
@@ -83,7 +82,7 @@ h1{
 }
 
 .caixa-table{
-    max-height: 250px;
+    max-height: 500px;
     overflow: auto;
 }
 
@@ -94,12 +93,13 @@ h1{
 
 .form-prod-nota{
     display: block;
-    flex: 1;
+    flex: 2;
+    padding-right: 20px;
 }
 
 .form-prod-nota2{
     display: block;
-    flex: 1;
+    flex: 3;
 }
 
 .form-prod{

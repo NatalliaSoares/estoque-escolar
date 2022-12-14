@@ -2,23 +2,21 @@
 class Produto{
     public function cadastrar(){
         $nome_produto = $_POST['nome_produto'];
-        $unidade_medida = $_POST['unidade_medida'];
         $data_validade = $_POST['data_validade'];
         $id_fornecedor = $_POST['id_fornecedor'];
         $id_recurso = $_POST['id_recurso'];
 
         global $db;
 
-        $sql = "INSERT INTO produtos SET nome_produto = :nome_produto, unidade_medida = :unidade_medida,
+        $sql = "INSERT INTO produtos SET nome_produto = :nome_produto,
         data_validade = :data_validade, id_fornecedor = :id_fornecedor, id_recurso = :id_recurso";
         $sql = $db->prepare($sql);
         $sql->bindValue(":nome_produto", $nome_produto);
-        $sql->bindValue(":unidade_medida", $unidade_medida );
         $sql->bindValue(":data_validade", $data_validade);
         $sql->bindValue(":id_fornecedor", $id_fornecedor);
         $sql->bindValue(":id_recurso", $id_recurso);
         $sql->execute();
-        
+        //print_r($sql->errorInfo()); exit;
         if($sql) {
             header("Location:listar-produtos.php");
         }

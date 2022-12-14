@@ -39,7 +39,7 @@ require_once "config.php";
         </button>
         <ul class="dropdown-menu">
             <li><a class="dropdown-item " href="<?php echo $url ?>cad-nota.php" class="botao-menu">Cadastrar nota</a></li>
-
+            <li><a class="dropdown-item " href="<?php echo $url ?>listar-nota.php" class="botao-menu">Listar nota</a></li>
         </ul>
 
 </div>

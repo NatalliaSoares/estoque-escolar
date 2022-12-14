@@ -17,7 +17,7 @@ $recurso = new Recurso();
 
 
 
-if (isset($_POST["nome_produto"]) && isset($_POST["unidade_medida"])){
+if (isset($_POST["nome_produto"])){
    $produto->cadastrar();
 }
 
@@ -39,7 +39,10 @@ $recursos = $recurso->pegarecursos();
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/estiloproduto.css">
-    <title>Cadastrar Produtos</title>
+    <link rel="stylesheet" href="./css/paginas.css">
+
+    <title>Entrada</title>
+    
 </head>
 <body>
 
@@ -50,7 +53,7 @@ $recursos = $recurso->pegarecursos();
 
     <div class="fundo">           
             
-            <div class="container">
+            <div class="conta">
                 <fieldset>
                     <legend> Cadastrar Produto </legend>
                     <form method="POST">
@@ -99,7 +102,7 @@ $recursos = $recurso->pegarecursos();
 
         </div>
 
-
+        <footer class="menurp"><a href="" class="paragrafo">-->Desenvolvido pela Segunda Turma do Curso Técnico de Informática<--</a></footer>
     
 </body>
 </html>

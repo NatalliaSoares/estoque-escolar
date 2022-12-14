@@ -1,72 +1,35 @@
-body{
-    background-color: #CFDCC0;
+.btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.menurp{
+    background-color:#096F34 ;
+    list-style: none;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+legend{
+    display: flex;
+    justify-content: center;
     color: #115B31;
 }
 
-.fundo-cad{
-    background-color: white;
-    width: 1006px;
-    height: 630px;
-    border-radius: 30px;
-    margin: auto;
-    margin-top: 40px;
-    padding-top: 30px;
+dropdown{
+    margin-left: 20px;
 }
 
-.fundo-lista-forn{
-    background-color: white;
-    width: 1400px;
-    max-height: 630px;
-    border-radius: 30px;
-    margin: auto;
-    margin-top: 40px;
-    padding: 20px;
-    overflow: auto;
-}
-
-.fundo-editar-forn{
-    background-color: white;
-    width: 920px;
-    max-height: 630px;
-    border-radius: 30px;
-    margin: auto;
-    padding: 20px;    
-    margin-top: 70px;
-}
-
-.fundo-cad-nota{
-    background-color: white;
-    width: 920px;
-    max-height: 400px;
-    border-radius: 30px;
-    margin: auto;
-    padding: 20px;    
-    margin-top: 50px;
+input, select{
+    margin-bottom: 10px;
 }
 
 h1{
     font-size: 30px;
     text-align: center;
-}
-
-.container{
-    width: 900px;
-    height: 490px;
-}
-
-.btn-cadastrar{
-    margin-left: 0%;
-    
-}
-
-.btn-editar{
-    margin-left: 0%;
-    margin-top: 20px;
-}
-
-.table{
-    max-width: 1350px;
-    max-height: 600px;
-    margin: auto;
-    color: #115B31;
 }
